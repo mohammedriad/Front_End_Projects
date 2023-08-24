@@ -1,0 +1,833 @@
+
+:root{
+    --main_color :#381605;
+    --label_color :#BC7B49;
+    --text_color :#1e1e1e;
+    --padding-btn:10px 20px ; 
+    --margin-left : 6%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 5200px;
+}
+
+section.main{
+
+    height: 750px;
+    display: flex;
+}
+/* left main section */
+section.main div.left{
+    margin-left: var(--margin-left);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+section.main div.left div.logo-container{
+    height: 80px;
+   
+    flex: .3;
+    display: flex;
+    align-items: center;
+}
+section.main div.left div.logo-container img.logo{
+    width: 15%;
+    height: 55px;
+}
+
+section.main div.left div.main-content{
+    
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+section.main div.left div.main-content h1{ 
+    font-size: 70px;
+    width: 90%; 
+    margin-bottom:30px ;
+}
+section.main div.left div.main-content p{
+
+    color: var(--label_color);
+    font-size: 20px; 
+    
+}
+section.main div.left div.learn-more{
+    flex: .6; 
+    
+}
+section.main div.left div.learn-more button.learn-more { 
+    background-color: var(--main_color);
+    color: white;
+    padding: 20px 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+/*end  left main section */
+
+ /* Start Main Right Section  */
+section.main div.right{
+    flex: 1;
+    background:url(../assets/images/section_1_img.jpg); 
+    border-bottom-left-radius: 120px;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.main div.right div.top { 
+    height: 100px;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+section.main div.right div.top nav.top-list ul  {
+    list-style-type: none;
+    display: flex; 
+    gap: 30px;
+   
+}
+section.main div.right div.top nav.top-list ul li {
+    color: white;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: var(--padding-btn);
+  
+    
+}
+
+
+section.main div.right div.top buttom.sign-up{
+    color: white;
+    padding: var(--padding-btn);
+    background-color: var(--label_color);
+    border-radius: 20px;
+    color: white;
+}
+
+section.main div.right div.bottom { 
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    justify-content: space-around;
+    
+}
+
+section.main div.right div.bottom div.chefs { 
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: white; 
+    width: 250px;
+    height: 100px;
+    gap: 10px; 
+    border-radius: 15px;
+
+}
+section.main div.right div.bottom div.chefs img.avatar { 
+    height: 40px;
+    width: 40px;
+    object-fit: cover; 
+    padding-left: 10px;
+    border-radius: 50%;
+}
+/* End Main Right Section  */ 
+
+/* start Main featured-meals Section  */ 
+
+section.featured-meals  {
+    
+    height: 800px;
+    margin-top: 100px; 
+    margin-left: var(--margin-left); 
+   
+
+}
+
+section.featured-meals div.our-recommendation { 
+
+    color: var(--label_color);
+
+}
+section.featured-meals div.our-recommendation::before{ 
+
+    content: " ";
+    width: 50px;
+    height: 2px; 
+    background-color:var(--label_color);
+    display: inline-block;
+}
+
+section.featured-meals div.title-list { 
+
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+section.featured-meals div.title-list h2{ 
+    font-size: 40px;
+}
+
+section.featured-meals div.title-list div.list-pic-fetures {
+
+    display: flex; 
+    justify-content: space-between; 
+    margin-right: 40px; 
+
+    gap: 70px; 
+    
+}
+
+section.featured-meals div.title-list div.list-pic-fetures >div { 
+    display: flex;  
+    align-items: center;
+    gap: 10px; 
+    background-color: white;
+    border: solid 3px #E0E3EB; 
+    border-radius: 30px; 
+    padding: 10px 30px;
+}
+section.featured-meals div.title-list div.list-pic-fetures >div > p {
+    font-size: 20px; 
+    
+
+}
+section.featured-meals div.title-list div.list-pic-fetures div.Home-item { 
+
+    background-color: var(--label_color);
+} 
+
+section.featured-meals div.feture_meals_cards_cont { 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px; 
+   
+
+}
+section.featured-meals div.feture_meals_cards_cont div.card {
+    
+    height: 600px;
+    width: 350px;
+    
+} 
+
+section.featured-meals div.feture_meals_cards_cont div.card 
+div.image img {
+
+    height: 400px;
+    width: 350px; 
+    border-radius: 30px;
+    position: relative; 
+    
+}
+section.featured-meals div.feture_meals_cards_cont div.card 
+div.image div.buttom { 
+    position: absolute; 
+    bottom:-470px;  
+    margin-left: 20px;
+}
+section.featured-meals div.feture_meals_cards_cont div.card 
+div.image div.buttom button {
+    padding: 10px 30px; 
+    border-radius: 30px; 
+    border: none;
+    color: white; 
+     
+    font-size: bold;
+    background-color: var(--label_color);
+}
+section.featured-meals div.feture_meals_cards_cont div.card
+h2 { 
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+section.featured-meals div.feture_meals_cards_cont div.card
+p.des{ 
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: bold; 
+    color: rgb(85, 85, 85);
+}
+section.featured-meals div.feture_meals_cards_cont div.card
+div.avatar { 
+   
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    align-items: center;
+}
+
+ section.featured-meals div.feture_meals_cards_cont div.card
+div.avatar div.photo { 
+    height: 50px;
+    width: 50px;
+  
+
+
+} 
+section.featured-meals div.feture_meals_cards_cont div.card
+div.avatar div.photo img { 
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+/* start section best_meal */
+section.best_meal { 
+    height: 600px;
+    margin-top: 80px; 
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-left); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+section.best_meal div.left { 
+    flex: 1.5;
+}
+
+section.best_meal div.left p.ready-to-seal { 
+    color: var(--label_color);
+    margin-bottom: 20px;
+}
+section.best_meal div.left p.ready-to-seal::before{
+    content: " ";
+    height: 2px;
+    width: 40px; 
+    margin-bottom: 5px;
+    background-color: var(--label_color);
+    display: inline-block;
+   
+}
+section.best_meal div.left h2 { 
+
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+section.best_meal div.left p.des { 
+    width: 70%;
+    line-height: 30px; 
+    margin-bottom: 20px; 
+    font-size: 18px;
+}
+section.best_meal div.left h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section.best_meal div.left div.option-list{
+    display: flex;
+    justify-content: space-between;
+    width: 25%; 
+    margin-bottom: 10px;
+    
+}
+
+section.best_meal div.left div.option-list div.option{ 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+section.best_meal div.left div.call-us-cont {
+   
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    width: 40%;
+    margin-top: 50px;
+}
+section.best_meal div.left div.call-us-cont div.info { 
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+section.best_meal div.left div.call-us-cont div.info img { 
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+section.best_meal div.left div.call-us-cont div.contact-us  {
+    background-color: var(--main_color); 
+    color: white;
+    display: flex;
+    flex-direction: row; 
+    gap: 5px;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+section.best_meal div.left div.call-us-cont div.contact-us img { 
+    height:20px;
+    width: 20px;
+}
+section.best_meal div.right{ 
+   
+    flex: 1;
+    background: url(../assets/images/Section_3_image_1.jpg);
+    border-radius: 30px;
+    margin-right: 20px;
+}
+ /* End best_meal Section   */
+
+/* Start About us Section   */
+section.about-us { 
+    margin-top: 50px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+section.about-us p.label { 
+    color: var(--label_color);
+    margin-bottom: 10px;
+}
+section.about-us h2.title { 
+
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+section.about-us div.about-us-contaner { 
+    height: 700px;
+    width: 50%; 
+    position: relative;
+    
+}
+section.about-us div.about-us-contaner div.image { 
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background: url(../assets/images/section_4_image.jpg) no-repeat center ;
+    background-size: cover;
+    border-radius: 30px;
+}
+section.about-us div.about-us-contaner div.info { 
+
+    position: absolute;
+    height: 300px;
+    width: 600px ;
+    background-color: white;
+    bottom: 10px;
+    left: 150px;
+    border-radius: 30px;
+}
+section.about-us div.about-us-contaner div.info h3.title-des{
+   font-size: 24px;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+}
+section.about-us div.about-us-contaner div.info p.desc {
+    margin-left: 10px; 
+    line-height: 25px;
+    color: rgb(93, 89, 89);
+    margin-bottom: 20px;
+
+}
+section.about-us div.about-us-contaner div.personla-info { 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+section.about-us div.about-us-contaner div.personla-info div.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+section.about-us div.about-us-contaner div.personla-info div.img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+section.about-us div.about-us-contaner div.personla-info div.rate { 
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+    align-items: center; 
+    
+
+}
+section.about-us div.about-us-contaner div.personla-info div.rate p {
+    margin-right: 20px; 
+}
+/* End About us Section   */
+
+
+/* Start secstion buying meal  */
+section.buy-meal { 
+
+    height: 950px;
+    
+    margin-top: 30px;
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-left);
+}
+section.buy-meal div.head { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+section.buy-meal div.head p { 
+    color: var(--label_color);
+}
+section.buy-meal div.head h2{
+    font-size: 40px; 
+    width: 30%; 
+    text-align: center;
+}
+section.buy-meal div.head button { 
+
+    padding: 10px 40px;
+    background-color: var(--main_color);
+    color: white;
+    border-radius: 30px;
+}
+section.buy-meal div.buy-meal-container{ 
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    
+    
+    
+}
+section.buy-meal div.buy-meal-container div.left { 
+    
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+   
+}
+
+
+section.buy-meal div.buy-meal-container div.left div.info { 
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    
+} 
+
+
+
+
+section.buy-meal div.buy-meal-container div.left div.info 
+div.img  img { 
+    height: 90%;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-right: 50px;
+} 
+section.buy-meal div.buy-meal-container div.left div.info 
+div.des { 
+  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    margin-top: 20px;
+
+}
+section.buy-meal div.buy-meal-container div.left div.info 
+div.des div.img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+section.buy-meal div.buy-meal-container div.left div.info 
+div.des div.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+ 
+}
+
+
+
+section.buy-meal div.buy-meal-container div.left div.info 
+div.des div.para{
+
+    width: 90%;
+    font-size: 20px;
+    line-height: 20px;
+}
+section.buy-meal div.buy-meal-container div.left div.info 
+div.des div.nothing-yet{
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #545252;
+
+}
+
+
+
+
+
+
+
+section.buy-meal div.buy-meal-container div.right { 
+
+   flex: 0.9;
+   height: 700px;
+   display: flex;
+   flex-direction: column;
+  
+}
+section.buy-meal div.buy-meal-container div.right div.img { 
+
+    height: 400px;
+    width: 100%;
+    background: url(../assets/images/section_5_image_4.jpg)center;
+
+    background-size: cover;
+    border-radius: 40px;
+    margin-bottom: 20px;
+} 
+
+
+
+section.buy-meal div.buy-meal-container div.right div.info{ 
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+} 
+section.buy-meal div.buy-meal-container div.right 
+div.info img{
+  
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+section.buy-meal div.buy-meal-container div.right h3 { 
+
+    margin-top: 20px;
+    font-size: 30px;
+}
+section.buy-meal div.buy-meal-container div.right p { 
+
+    margin-top: 20px;
+    line-height: 30px;
+    color: #636161;
+} 
+section.buy-meal div.buy-meal-container div.right div.more{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+} 
+section.buy-meal div.buy-meal-container div.right div.more img{
+
+    height: 25px;
+    width: 25px;
+    margin-top: 12px;
+}
+ /* End secstion buying meal  */ 
+
+
+
+ /* Start Subscribe Section */
+
+ section.subscribe{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    margin: var(--margin-left);
+    margin-left:200px;
+    background:url(../assets/images/subscribe.png) no-repeat center; 
+    position: relative;
+}
+
+section.subscribe div.cont { 
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 550px;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+} 
+section.subscribe div.cont div.email { 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+}
+section.subscribe div.cont div.email input { 
+    padding: 15px 60px; 
+    border: white;
+    border-radius: 40px;
+}
+section.subscribe div.cont div.email label { 
+    margin-top: 10px;
+}
+
+section.subscribe div.cont div.butn {
+
+    margin-right: 4px;
+}
+section.subscribe div.cont div.butn button{
+ 
+    padding: 13px;
+    background-color: var(--main_color);
+    border-radius: 40px;
+    color: white;
+}
+/* End Subscribe Section */
+
+/* Start fotter section  */
+footer.footer {
+    margin:var(--margin-left);
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+
+}
+footer.footer div.left { 
+
+    flex: 0.75;
+}
+
+footer.footer div.left >h3{
+    font-size: 24px;
+    margin-bottom: 50px;
+
+
+}
+footer.footer div.left >p { 
+
+    line-height: 30px;
+    color: #4e4a4a;
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 50px;
+    
+}
+
+footer.footer div.left div.icons { 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 110px;
+}
+
+
+
+
+
+footer.footer div.right{
+    flex: 0.7; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+footer.footer div.right div.property{
+     
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #4e4a4a;
+}
+footer.footer div.right div.property h4{
+    color: black;
+    font-size: 20px; 
+    margin-bottom: 20px;  
+}
+
+
+footer.footer div.right div.article{
+     
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #4e4a4a;
+}
+footer.footer div.right div.article h4{
+    color: black;
+    font-size: 20px; 
+    margin-bottom: 20px;  
+}
+
+footer.footer div.right div.contact{
+     
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #4e4a4a;
+}
+footer.footer div.right div.contact h4{
+    color: black;
+    font-size: 20px; 
+    margin-bottom: 20px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
