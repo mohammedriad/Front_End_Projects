@@ -1,0 +1,439 @@
+/* *{
+    padding: 0;
+    margin: 0;
+  
+}
+
+/* Components */
+
+.small-font{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+}
+.large-font{
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+
+}
+
+
+
+
+:root{
+    --section-one-background:url('../assists/background.png') ;
+    --sections-background-color:linear-gradient(to top right,#45108A,#3D065F,#10054D ); 
+    --main-color : white ;
+    --sections-height :700px;
+    --buttons-padd : 10px 50px ;
+    --images-height:450px
+}
+
+body{
+    height: 2000px;
+}
+
+section.sec-one{
+    height: var(--sections-height);
+    /* background: var(--section-one-background) ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: color-change-3x 3s infinite forwards ease-in-out; 
+    perspective: 200px; 
+    perspective-origin: center;
+}
+
+    
+
+section.sec-one div.contaner{
+    overflow: hidden;
+    height: 600px;
+    width: 1250px;
+    background: var(--sections-background-color);
+    border-radius: 15px; 
+    
+    transition: 0.5s ; 
+
+}
+
+section.sec-one div.contaner:hover{
+    transform: translate3d(0 , 0 ,10px) 
+}
+
+
+section.sec-one div.contaner >div.nav-bar{
+    direction: rtl;
+    
+}
+section.sec-one div.contaner div.nav-bar ul{
+    display: flex;
+    flex-wrap: row nowrap;
+    gap: 80px;
+    list-style-type: none;
+    color:var(--main-color);
+    margin: 30px 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    white-space: 30px;
+
+}
+section.sec-one div.contaner div.nav-bar ul li{
+    cursor: pointer;
+}
+section.sec-one div.contaner div.nav-bar ul li:hover{
+    
+    text-decoration: underline;
+    text-decoration-style: solid ;
+    text-shadow: white 1px 1px 10px;
+}
+
+section.sec-one div.contaner div.content{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+
+  
+}
+
+
+section.sec-one div.contaner div.content div.left{
+    /* background-color: green; */
+    height: inherit;
+    flex: 1;
+    direction: ltr; 
+
+}
+section.sec-one div.contaner div.content div.left h1{
+    color: var(--main-color);
+    font-size: 52px;
+    width: 500px;
+    padding: 100px 0px 10px 40px;
+    letter-spacing: 3px;
+}
+section.sec-one div.contaner div.content div.left p{
+    color: var(--main-color);
+    font-size: 18px; 
+    width: 80%;
+    padding: 20px 0px 10px 40px;
+    line-height: 25px;
+    
+}
+section.sec-one div.contaner div.content div.left div.btn{
+    padding: 20px 0px 10px 40px;
+}
+section.sec-one div.contaner div.content div.left div.btn >button{ 
+
+    padding: var(--buttons-padd) ;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right ,#7C1DC9, #6E41D2,#4C9BE8 ,#2AF6FF);
+    color: var(--main-color); 
+    font-size: 16px;
+    
+}
+section.sec-one div.contaner div.content div.left div.btn >button:hover{
+    cursor: pointer;
+}
+section.sec-one div.contaner div.content div.right{
+    height: inherit;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+section.sec-one div.contaner div.content div.right img{
+    margin-top: 60px;
+    margin-right: 30px;
+    background-size: contain;
+    height: var(--images-height);
+}
+/* Section one end */
+/* Section two start */ 
+
+section.sec-two{
+    background:var(--sections-background-color);
+    height: var(--sections-height) ; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+section.sec-two div.left{
+    flex: 1;
+    height: inherit;  
+}
+section.sec-two div.left div.about{
+    margin: 250px 0px 20px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px transparent ;
+   padding: 0px 50px;
+    background: linear-gradient(to right ,#45108A,#383D94);
+
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+}
+section.sec-two div.left div.about h3{
+    font-size: 24px;
+    color: var(--main-color);
+}
+section.sec-two div.left p {
+    margin: 30px 0px 20px 50px; 
+    color: var(--main-color);
+    width: 60%;
+
+}
+
+section.sec-two div.right{
+   
+    flex: 0.6;
+    height: inherit;
+    background: url(../assists/section_two.png) no-repeat;
+    height: 550px;
+    position: relative;
+    top: 75px;
+    
+    background-size: contain;
+    
+
+}
+/* seciton 3 */
+
+section.sec-3{
+    height: var(--sections-height);
+    background: var(--sections-background-color);
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: hidden;
+
+}
+section.sec-3 div.upload{    
+    height: 100px;
+    width:900px; 
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 60px;
+    /* background-color: aliceblue; */
+
+    
+}
+section.sec-3 div.upload div:not(.txt){
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+    
+
+ }
+ section.sec-3 div.upload div:nth-child(1){
+    background-color: #FF0101;
+ }
+ section.sec-3 div.upload div:nth-child(2){
+    background-color: #FF9900;
+ }
+ section.sec-3 div.upload div:nth-child(3){
+    background-color: #00FFE0; 
+    margin-right: 10px;
+ }
+
+ section.sec-3 div.upload p{
+    color: var(--main-color);
+    font-size: 32px;
+   
+ }
+
+section.sec-3 div.img-upl{
+    height: 450px;
+    width: 800px;
+    margin-top: 80px;
+    border: 7px white dashed;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.sec-3 div.img-upl div.icon-upl {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+   
+}
+
+section.sec-3 div.img-upl div.icon-upl img{
+    height: 105px;
+    width: 100px;
+}
+section.sec-3 div.img-upl div.icon-upl p { 
+    position: relative;
+    bottom: 20px;
+    color: var(--main-color);
+    font-size: 20px;
+}
+section.sec-3 div.img-upl > p{
+    color: #9DA0AB;
+    position: relative;
+    top: 30px;
+}
+section.sec-3 div.img-upl >div.btn-upl { 
+    margin-top: 50px;
+}
+section.sec-3 div.img-upl >div.btn-upl input{
+    display: none;
+}
+section.sec-3 div.img-upl >div.btn-upl label{
+    border: none;
+    padding: 15px 80px;
+    border-radius: 50px;
+    background: linear-gradient(to right ,#7C1DC9,#6E41D2 ,#4C9BE8 ,#2AF6FF);
+    color: var(--main-color);
+    font-size: 20px;
+
+}
+section.sec-3 div.img-upl >div.btn-upl label:hover{
+    cursor:pointer;
+}
+
+
+/* section 4 */
+section.sec-4{
+    height: var(--sections-height);
+    background: var(--sections-background-color);
+    overflow: hidden;
+}
+
+section.sec-4 button { 
+    position: relative;
+    top: 50%;
+    left: 40% ;
+    z-index: 1;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: #000000;
+    font-size: 16px;
+}
+section.sec-4 button:hover{ 
+    background-color: #10054D;
+    color: #ffffff;
+
+
+}
+
+
+section.sec-4 div.contact-us{ 
+    height: 550px;
+    width: 900px;
+    background-color: var(--main-color); 
+    border-radius: 40px;
+    position: relative;
+    top: 0;
+    left: 23% ;
+    visibility:hidden;
+    /* transition-timing-function: 1s ; */
+   
+}
+section.sec-4 div.contact-us div.cont{ 
+    height: inherit;
+    width: 600px;
+    margin-left:300px ;
+    position: relative;
+   
+}
+section.sec-4 div.contact-us div.cont p{
+    position: absolute;
+    top: 40px;
+    font-size: 24px;
+}
+section.sec-4 div.contact-us div.cont form { 
+    position: absolute;
+    top:120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.sec-4 div.contact-us div.cont form input{
+    width: 500px;
+    padding: 20px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+}
+section.sec-4 div.contact-us div.cont form label{
+    height: 10px;
+}
+section.sec-4 div.contact-us div.cont form textarea {
+   
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+
+}
+section.sec-4 div.contact-us div.cont form button {
+position: absolute;
+top: 340px; 
+left: 2px;
+font-size: 18px;
+padding: 0px;
+background-color: #000000 ;
+color: var(--main-color);
+width: 120px;
+height: 40px;
+border-radius:6px;
+align-items: center;
+justify-content: center;
+display: flex;
+ 
+}
+section.sec-4 div.contact-us div.cont form button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes color-change-3x {
+    0% {
+        background: #45108A;
+      }
+      50% {
+        background: #3D065F;
+      }
+      100% {
+        background: #10054D;
+      }
+    }
+    
+
+
+
+
